@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
-var backGroundOnboard = Colors.pink[50];
+var backGroundOnboard = Colors.white;
 const backGroundColor = Color(0xFFFFFFFF);
-const textHeader = Color.fromARGB(0, 31, 18, 22);
-const textBody = Color.fromARGB(0, 152, 147, 148);
+var textBody = HexColor("#323755");
+const textHeader = Colors.black;
+
+var primaryRed = HexColor("#E94057");
+
 
 var colorButton1 = Container(
   decoration: ShapeDecoration(

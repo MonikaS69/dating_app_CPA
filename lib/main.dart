@@ -1,6 +1,6 @@
-import 'package:dating_app1/screens/home_screen.dart';
-import 'package:dating_app1/screens/onboarding_screen.dart';
-import 'package:dating_app1/utils/colors.dart';
+import 'package:dating_app/screens/home_screen.dart';
+import 'package:dating_app/screens/onboarding_screen.dart';
+import 'package:dating_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
