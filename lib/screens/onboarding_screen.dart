@@ -1,14 +1,10 @@
+import 'package:dating_app/screens/sign%20Up%20screens/signup_screen.dart';
 import 'package:dating_app/utils/colors.dart';
+import 'package:dating_app/widgets/custom_button.dart';
 import 'package:dating_app/widgets/sliders.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
-final List<String> urlImages = [
-  'assets/images/onBoardImg/girl1.jpg',
-  'assets/images/onBoardImg/girl2.jpg',
-  'assets/images/onBoardImg/girl3.jpg',
-  'assets/images/onBoardImg/male1.jpg',
-  'assets/images/onBoardImg/male2.jpg',
-];
+import 'package:google_fonts/google_fonts.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   static String routeName = "/onBoardScreen";
@@ -19,17 +15,48 @@ class OnBoardingScreen extends StatefulWidget {
 }
 
 class _OnBoardingScreenState extends State<OnBoardingScreen> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backGroundOnboard,
-      body: const SafeArea(
+      backgroundColor: backGroundColor,
+      body: SafeArea(
         child: Column(
           children: [
-            Padding(padding: EdgeInsets.only(top: 30)),
-            SliderWid(),
-            SizedBox(height: 15,),
+            const Padding(padding: EdgeInsets.only(top: 30)),
+            const SliderWid(),
+            const SizedBox(
+              height: 40,
+            ),
+            CustomButton(
+              onTap: () {
+                Navigator.pushNamed(context, SignUpScreen.routeName);
+              },
+              text: "Create an account",
+              backgroundColor: primaryRed,
+              textColor: text2,
+            ),
+            SizedBox(height: 30),
+            RichText(
+              text: TextSpan(
+                text: "Already have an account? ",
+                style: GoogleFonts.inclusiveSans(
+                  color: text1,
+                  fontSize: 16,
+                ),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: "Sign In",
+                    style: TextStyle(
+                      color: primaryRed,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    recognizer: TapGestureRecognizer()..onTap = (){
+                      Navigator.pushNamed(context, "/signIn");
+                    }
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),

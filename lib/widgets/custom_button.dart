@@ -66,7 +66,7 @@ class CustomOtherButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         backgroundColor: backgroundColor,
-        minimumSize: const Size(double.maxFinite, 45),
+        minimumSize: const Size(260, 45),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
         ),

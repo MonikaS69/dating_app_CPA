@@ -8,6 +8,9 @@ const textHeader = Colors.black;
 
 var primaryRed = HexColor("#E94057");
 
+const text1 = Colors.black;
+const text2 = Colors.white;
+
 
 var colorButton1 = Container(
   decoration: ShapeDecoration(

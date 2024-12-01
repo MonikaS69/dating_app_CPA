@@ -78,7 +78,7 @@ class _SliderWidState extends State<SliderWid> {
         Text(
           slide['header']!,
           style: GoogleFonts.inclusiveSans(
-            fontSize: 22,
+            fontSize: 24,
             fontWeight: FontWeight.bold,
             color: primaryRed,
           ),
@@ -89,7 +89,7 @@ class _SliderWidState extends State<SliderWid> {
             slide['text']!,
             textAlign: TextAlign.center,
             style: GoogleFonts.inclusiveSans(
-              fontSize: 12,
+              fontSize: 16,
               color: textBody,
             ),
           ),
