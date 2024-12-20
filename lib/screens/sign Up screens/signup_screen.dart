@@ -23,7 +23,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Column(
               children: [
-                SizedBox(height: 70),
+                SizedBox(height: 50),
                 Image(image: AssetImage("assets/icons/trademark.png")),
                 SizedBox(height: 110),
                 Text(
@@ -33,7 +33,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 SizedBox(height: 50),
                 CustomButton(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, '/homeScreen');
+                  },
                   text: "Continue with email",
                   backgroundColor: primaryRed,
                   textColor: text2,
@@ -47,7 +49,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   backgroundColor: Colors.white,
                   textColor: primaryRed,
                 ),
-                SizedBox(height: 55),
+                SizedBox(height: 40),
                 Row(
                   children: [
                     const Expanded(

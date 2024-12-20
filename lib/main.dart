@@ -1,5 +1,11 @@
 import 'package:dating_app/screens/home_screen.dart';
 import 'package:dating_app/screens/onboarding_screen.dart';
+import 'package:dating_app/screens/sign%20Up%20screens/otp_screens.dart';
+import 'package:dating_app/screens/sign%20Up%20screens/signup_number_screen.dart';
+import 'package:dating_app/screens/sign%20Up%20screens/signup_screen.dart';
+import 'package:dating_app/screens/signin_screen.dart';
+import 'package:dating_app/screens/user_profile/gender_screen.dart';
+import 'package:dating_app/screens/user_profile/user_profile_screen.dart';
 import 'package:dating_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -36,8 +42,19 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
       routes: {
+        //Normal
         HomeScreen.routeName: (context) => const HomeScreen(),
         OnBoardingScreen.routeName: (context) => const OnBoardingScreen(),
+        //Sign Up
+        SignUpScreen.routeName: (context) => const SignUpScreen(),
+        //Sign In
+        SignInScreen.routeName: (context) => const SignInScreen(),
+        NumberSignUpScreen.routeName: (context) => const NumberSignUpScreen(),
+        OtpScreens.routeName: (context) => const OtpScreens(),
+        //User
+        UserProfileScreen.routeName: (context) => const UserProfileScreen(),
+        GenderScreen.routeName: (context) => const GenderScreen(),
+        // UserProfileScreen.routeName: (context) => const UserProfileScreen()
       },
       home: const OnBoardingScreen(),
     );

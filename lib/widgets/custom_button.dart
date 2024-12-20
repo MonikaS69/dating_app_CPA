@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 //CustomLoginBtn
 class CustomButton extends StatelessWidget {
 const CustomButton({
@@ -19,11 +18,12 @@ const CustomButton({
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        padding: const EdgeInsets.symmetric(horizontal: 85, vertical: 19),
+        padding: const EdgeInsets.symmetric( vertical: 19),
         backgroundColor: backgroundColor,
         minimumSize: const Size(double.infinity, 40),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15),
+          
         ),
       ),
       onPressed: onTap,
@@ -31,7 +31,7 @@ const CustomButton({
         text,
         style: GoogleFonts.poppins(
           textStyle: TextStyle(
-            fontSize: 18,
+            fontSize: 17,
             fontWeight: FontWeight.w600,
             color: textColor,
           ),
